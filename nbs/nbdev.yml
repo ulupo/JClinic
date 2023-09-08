@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "JClinic"
+  site-url: "https://ulupo.github.io/JClinic"
+  description: "Simple protein property prediction"
+  repo-branch: main
+  repo-url: "https://github.com/ulupo/JClinic"
