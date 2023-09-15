@@ -85,7 +85,7 @@ def create_raw_dataset(
         )
         assert len(raw_data["esm_embeddings"]) == len(raw_data["pos"])
 
-        raw_data["y"] = torch.tensor([[Y[name]]]).to(torch.float32)
+        raw_data["y"] = torch.tensor([Y[name]]).to(torch.float32)
 
         raw_dataset.append(raw_data)
 
