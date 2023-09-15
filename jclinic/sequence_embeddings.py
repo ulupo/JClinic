@@ -45,6 +45,7 @@ def embeddings_from_parsed_prody(
         esm2, esm2_alphabet = getattr(esm.pretrained, pretrained_esm_model)()
     except AttributeError:
         print(f"`pretrained_esm_model` must be one of {PRETRAINED_ESM_MODELS}")
+        raise
     else:
         if repr_layers is None:
             repr_layers = [len(esm2.layers)]
